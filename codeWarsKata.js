@@ -9,11 +9,12 @@ function getMichaelLastName(inputText) {
     return lastNames;
   }
   
+  console.log(getMichaelLastName("MichaelDavid"))
 
   /* ----------------------------------------------------------------------- */
 
 
-/* Extract names of people named michael: */
+/* multiples of 3 or 5 */
 
 function solution(number) {
     if (number < 0) {
@@ -30,7 +31,7 @@ function solution(number) {
     return sum;
   }
 
-  
+  console.log(solution(5))
 
   /* ------------------------------------------------ */
 
@@ -54,3 +55,4 @@ function generateHashtag(str) {
     return hashtag;
   }
   
+  console.log(generateHashtag("david shema"))

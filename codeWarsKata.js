@@ -1,7 +1,7 @@
 /* 
 Extract last names of people named Michael */
 
-
+/* 
 function getMichaelLastName(inputText) {
     const regex = /Michael\s([A-Z][a-z]+)/g;
     const matches = inputText.match(regex);
@@ -9,14 +9,14 @@ function getMichaelLastName(inputText) {
     return lastNames;
   }
   
-  console.log(getMichaelLastName("MichaelDavid"))
+  console.log(getMichaelLastName("MichaelDavid")) */
 
   /* ----------------------------------------------------------------------- */
 
 
 /* multiples of 3 or 5 */
 
-function solution(number) {
+/* function solution(number) {
     if (number < 0) {
       return 0;
     }
@@ -31,7 +31,7 @@ function solution(number) {
     return sum;
   }
 
-  console.log(solution(5))
+  console.log(solution(5)) */
 
   /* ------------------------------------------------ */
 
@@ -39,7 +39,7 @@ function solution(number) {
 
 /* THE HASHTAG GENERATOR */
 
-function generateHashtag(str) {
+/* function generateHashtag(str) {
     if (str.trim() === "") {
       return false;
     }
@@ -56,3 +56,31 @@ function generateHashtag(str) {
   }
   
   console.log(generateHashtag("david shema"))
+
+ */
+
+let num = 10;
+
+
+for (i = 0; i <= num; i++) {
+  let sum = 0;
+  
+  if (i % 3 === 0 || i % 5 === 0){
+    if (i === 0) continue;
+    for (i = 0; i < sum; i++){
+      console.log(sum+i)
+    }
+    
+
+  
+
+   
+  }else{
+    continue;
+
+
+  }
+  
+
+
+}

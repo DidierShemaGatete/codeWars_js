@@ -85,9 +85,10 @@ for (i = 0; i <= num; i++) {
 var kitchen = {
   tools : "span",
   food : "rice",                      /* calling method within an object */
-  cooking:(tools, food) => {
+  cooking:(tool, food2) => {
     console.log('the combination can be processed')
-    return tools + " " + food  +" can make a good combination"
+    console.log(kitchen.tools + "can be used in cooking " + this.food) /* this key */
+    return tool + " " + food2  +" can make a good combination"
   }
   
 }

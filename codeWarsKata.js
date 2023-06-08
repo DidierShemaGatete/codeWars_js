@@ -126,5 +126,13 @@ for(role in house){
 }
 
 
+/* map is a an array method that changes items of an array but it doesnt change the main var*/
 
+
+var tools = [1, 2, 4, 5]
+
+
+console.log(tools.map(() => 3))
+
+console.log(tools)
 

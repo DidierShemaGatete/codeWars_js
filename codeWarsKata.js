@@ -58,7 +58,7 @@ function getMichaelLastName(inputText) {
   console.log(generateHashtag("david shema"))
 
  */
-
+/* 
 let num = 10;
 
 
@@ -70,17 +70,32 @@ for (i = 0; i <= num; i++) {
     for (i = 0; i < sum; i++){
       console.log(sum+i)
     }
-    
+     */
+
 
   
 
    
-  }else{
-    continue;
 
 
+
+/* ============================================================================================================================ */
+
+
+var kitchen = {
+  tools : "span",
+  food : "rice",                      /* calling method within an object */
+  cooking:(tools, food) => {
+    console.log('the combination can be processed')
+    return tools + " " + food  +" can make a good combination"
   }
   
-
-
 }
+
+console.log(kitchen.cooking("cock", "rice"))
+
+
+
+/* ============================================= */
+
+

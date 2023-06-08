@@ -100,3 +100,31 @@ console.log(kitchen.cooking("cock", "rice"))
 /* ============================================= */
 
 
+
+/* ================================ iteration for.. in and for.. of*/
+
+
+var num = [2, 4, 5, 6, 8]
+
+for(i of num){
+  console.log(i)    /* it is used on iterable strings, arrays ,numbers,sets and maps */
+}
+
+
+const house = {
+  rooms: 5,                       /* in iterates over object properties */
+  garage: 1,
+  bathroom: 2,
+  operations: () => {
+    return "vacations"
+  },
+
+ 
+}
+for(role in house){
+  console.log(role + ":" + house[role])
+}
+
+
+
+

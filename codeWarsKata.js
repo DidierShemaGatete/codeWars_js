@@ -136,3 +136,42 @@ console.log(tools.map(() => 3))
 
 console.log(tools)
 
+
+/* running pace */
+
+
+function runningPace(distance, time) {
+  // Convert time to seconds
+  const [minutes, seconds] = time.split(":");
+  const totalSeconds = parseInt(minutes) * 60 + parseInt(seconds);
+
+  // Calculate pace in seconds per kilometer
+  const paceSeconds = totalSeconds / distance;
+
+  // Format the pace as minutes and seconds
+  const paceMinutes = Math.floor(paceSeconds / 60);
+  const paceSecondsFormatted = Math.floor(paceSeconds % 60);
+
+  return `${paceMinutes}:${paceSecondsFormatted.toString().padStart(2, "0")}`;
+}
+
+/* multiplication table */
+
+function multiplicationTable(size) {
+  const table = [];
+
+  for (let i = 1; i <= size; i++) {
+    const row = [];
+    for (let j = 1; j <= size; j++) {
+      row.push(i * j);
+    }
+    table.push(row);
+  }
+
+  return table;
+}
+
+// Example usage
+const size = 3;
+const multiplicationTableResult = multiplicationTable(size);
+console.log(multiplicationTableResult);
